@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+}
+
+.main {
+  background-color: #354259;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.main__window {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+  display: flex;
+}
+.main__window .left {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.main__window .left img {
+  width: 100%;
+}
+.main__window .right {
+  text-align: center;
+  width: 50%;
+}
+.main__window .right .head {
+  justify-content: center;
+  align-items: center;
+}
+.main__window .right h1 {
+  font-weight: bold;
+  margin-top: 20px;
+}
+.main__window .right p {
+  font-weight: 300;
+}
+.main__window .right form {
+  margin-top: 15px;
+}
+.main__window .right input {
+  margin-bottom: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .main .right {
+    width: 100%;
+  }
+  .main .left {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
